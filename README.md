@@ -1,5 +1,9 @@
 ## Nous auron besoin des Rpmfusion 
 
+[Rpmfusion](https://rpmfusion.org/)
+
+`sudo dnf install mpd`
+
 créer un dossier `mpd` dans `.config` mettez y le fichier `mpd.conf` et ouvrir dans le terminal click droit dans le dossier voulu
 
 et taper cette commande 
@@ -7,16 +11,6 @@ et taper cette commande
 `mpd mpd.conf`
 
 Si mpd était déjà démarré faite un killall mpd puis lancer la commande si dessu.
-
-Nous auron aussi besoin de `ncmpcpp` un player en ligne de commande
-
-`sudo dnf install ncmpcpp`
-
-Vous avez un pdf d'utilisation [ici](https://github.com/neecride/mpdconfig/blob/main/ncmpcpp-installation-configuration-et-utilisation.pdf)
-
-Les racourcis clavier basique de `ncmpcpp` 
-
-`2` permet de naviguer dans votre dossier la barre despace permet de mettre une musique en playlist et enter permet de mettre la lecture 
 
 Pour utiliser `mpd` dans une conssole
 
@@ -30,6 +24,27 @@ Pour utiliser `mpd` dans une conssole
 |`mpc repeat` | [on/off]	Activer/désactiver la répétition        |
 |`mpc random` | [on/off]	Activer/désactiver la lecture aléatoire |
 |`mpc clear` | Vider la file d'attente de lecture (playlist)      |
+
+
+<details>
+  
+<summary>Nous auron aussi besoin de ncmpcpp un player en ligne de commande</summary>
+
+<img width="916" height="748" alt="Capture d’écran du 2026-05-10 15-27-45" src="https://github.com/user-attachments/assets/3fe0ccef-7505-4e0d-82bf-6d30577f4303" />
+
+`sudo dnf install ncmpcpp`
+
+Vous avez un pdf d'utilisation [ici](https://github.com/neecride/mpdconfig/blob/main/ncmpcpp-installation-configuration-et-utilisation.pdf)
+
+Les racourcis clavier basique de `ncmpcpp` 
+
+| Commande	| description |
+|------------|----------|
+|`maj + 2`| permet de naviguer dans votre dossier musique| 
+|`maj + 1`| permet d'afficher la playliste |
+| barre d'espace | permet de mettre une musique en playlist|
+| enter | permet de mettre la lecture | 
+</details>
 
 ## Utilisation avec mpdris2 et dynamique music pill sous gnome 
 
@@ -96,3 +111,6 @@ systemctl --user status mpdris2
 │           └── mpdris2.service (optionnel)
 ├── Musique/
 ```
+## Résulta attendu 
+
+<img width="423" height="350" alt="Capture d’écran du 2026-05-10 15-37-27" src="https://github.com/user-attachments/assets/2a04f90f-eae8-47a3-a014-c4fdb43eb9ef" />
