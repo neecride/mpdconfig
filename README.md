@@ -34,6 +34,8 @@ Pour utiliser `mpd` dans une conssole
 
 <img width="916" height="748" alt="Capture d’écran du 2026-05-10 15-27-45" src="https://github.com/user-attachments/assets/3fe0ccef-7505-4e0d-82bf-6d30577f4303" />
 
+## installation
+
 `sudo dnf install ncmpcpp`
 
 Vous avez un pdf d'utilisation [ici](https://github.com/neecride/mpdconfig/blob/main/ncmpcpp-installation-configuration-et-utilisation.pdf)
