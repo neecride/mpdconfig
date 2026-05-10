@@ -1,5 +1,7 @@
 ## Nous auron besoin des Rpmfusion 
 
+*Configuration tester sous fedora et ubuntu avec le bureau gnome*
+
 [Rpmfusion](https://rpmfusion.org/)
 
 `sudo dnf install mpd`
@@ -42,8 +44,8 @@ Les racourcis clavier basique de `ncmpcpp`
 |------------|----------|
 |`maj + 2`| permet de naviguer dans votre dossier musique| 
 |`maj + 1`| permet d'afficher la playliste |
-| barre d'espace | permet de mettre une musique en playlist|
-| enter | permet de mettre la lecture | 
+| <kbd style="background-color:#f4f4f4; border:1px solid #ccc; border-radius:4px; padding:0.2em 0.6em; font-weight:bold;">Backspace ⌫</kbd> | permet de mettre une musique en playlist|
+| <kbd style="background-color:#f4f4f4; border:1px solid #ccc; border-radius:4px; padding:0.2em 0.6em; font-weight:bold;">Enter ⏎</kbd> | permet de mettre la lecture | 
 </details>
 
 ## Utilisation avec mpdris2 et dynamique music pill sous gnome 
