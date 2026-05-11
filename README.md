@@ -45,6 +45,7 @@ Pour utiliser `mpd` dans une conssole
 |`mpc random` | [on/off]	Activer/désactiver la lecture aléatoire |
 |`mpc clear` | Vider la file d'attente de lecture (playlist)      |
 
+---
 
 <details>
   
@@ -67,6 +68,8 @@ Les racourcis clavier basique de `ncmpcpp`
 | <kbd style="background-color:#f4f4f4; border:1px solid #ccc; border-radius:4px; padding:0.2em 0.6em; font-weight:bold;">Backspace ⌫</kbd> | permet de mettre une musique en playlist|
 | <kbd style="background-color:#f4f4f4; border:1px solid #ccc; border-radius:4px; padding:0.2em 0.6em; font-weight:bold;">Enter ⏎</kbd> | permet de mettre la lecture | 
 </details>
+
+---
 
 ## Utilisation avec mpdris2 et dynamique music pill sous gnome 
 
@@ -138,6 +141,8 @@ systemctl --user status mpdris2
 
 <img width="423" height="350" alt="Capture d’écran du 2026-05-10 15-37-27" src="https://github.com/user-attachments/assets/2a04f90f-eae8-47a3-a014-c4fdb43eb9ef" />
 
+---
+
 <details>
   
 <summary> Bonus </summary>
@@ -152,6 +157,7 @@ Une fois installer démarrer le, et la première chose a faire et de selectionne
 
 <img width="924" height="112" alt="Capture d’écran du 2026-05-11 10-56-38" src="https://github.com/user-attachments/assets/45f263bf-b9be-4071-9a87-a3a61098541e" />
 
+---
 
 Ensuite choisissez juste mpd dans la liste services et faite options > recharger le firewall
 
