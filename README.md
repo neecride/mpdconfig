@@ -198,13 +198,14 @@ Pour vous connecter depuis MPD pilot il faudra créer un profile local.
 
 |Port|
 |----|
-
 |6600|
 
 |Dans le fichier `mpd.conf` modifié comme suite|
-|-------------------------|
-|bind_to_address		|	"any"|
-|port				      |  "6600"|
+|-----------------------------|
+```
+bind_to_address			"any"
+port				"6600"
+```
 
 
 Si tout fonctionne comme prévue vous pourrez utilisez votre smartphone comme télécommande 
