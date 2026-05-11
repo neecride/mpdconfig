@@ -12,7 +12,7 @@ Passer par ce lien pour les [Rpmfusion](https://rpmfusion.org/)
 
 ## Après avoir intaller les Rpm passon a l'installation de mpd 
 
-*Mpd (music player daemon) qui agit comme un serveur mais pour la musique controller par le réseau.*
+*Mpd (music player daemon) qui agit comme un serveur mais pour la musique en réseau.*
 
 `sudo dnf install mpd`
 
@@ -33,6 +33,8 @@ Créer un dossier `mpd` dans `.config` mettez y le fichier `mpd.conf` et ouvrir 
 Si mpd était est déjà démarré faite un `killall mpd` puis relancer la commande si dessu.
 
 Pour utiliser `mpd` dans une conssole
+
+*Si mpc n'est pas installer la console vous deamdera si elle peut l'installer, alors faite le*
 
 | Commande	| description |
 |-----|----|
@@ -70,6 +72,10 @@ Les racourcis clavier basique de `ncmpcpp`
 </details>
 
 ---
+
+<details>
+  
+<summary>Installation de mpdris2</summary>
 
 ## Utilisation avec mpdris2 et dynamique music pill sous gnome 
 
@@ -115,6 +121,9 @@ systemctl --user start mpdris2
 # Vérifier
 systemctl --user status mpdris2
 ```
+</details>
+
+---
 
 ## Architecture des dossiers et fichiers de configuration 
 
