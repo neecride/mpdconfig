@@ -1,18 +1,36 @@
+Guide en construction
+
 ## Nous auron besoin des Rpmfusion 
 
-*Configuration tester sous fedora et ubuntu avec le bureau gnome*
+*Configuration tester sous fedora avec le bureau gnome*
 
-[Rpmfusion](https://rpmfusion.org/)
+Avant l'installation vérifier si vous n'avez pas déjà les rpm installer
+
+`dnf repolist`
+
+Passer par ce lien pour les [Rpmfusion](https://rpmfusion.org/)
+
+## Après avoir intaller les Rpm passon a l'installation de mpd 
+
+*Mpd (music player daemon) qui agit comme un serveur mais pour la musique controller par le réseau.*
 
 `sudo dnf install mpd`
 
-créer un dossier `mpd` dans `.config` mettez y le fichier `mpd.conf` et ouvrir dans le terminal click droit dans le dossier voulu
+```
+# Démarrage normal
+mpd ~/.config/mpd/mpd.conf
 
-et taper cette commande 
+# Service utilisateur
+systemctl --user enable mpd
+systemctl --user start mpd
+systemctl --user status mpd
+```
+
+Créer un dossier `mpd` dans `.config` mettez y le fichier `mpd.conf` et ouvrir dans le terminal click droit dans le dossier et ouvrir avec un terminal, et ensuite entré cette commande 
 
 `mpd mpd.conf`
 
-Si mpd était déjà démarré faite un killall mpd puis lancer la commande si dessu.
+Si mpd était est déjà démarré faite un `killall mpd` puis relancer la commande si dessu.
 
 Pour utiliser `mpd` dans une conssole
 
