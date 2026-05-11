@@ -50,7 +50,7 @@ Pour utiliser `mpd` dans une conssole
   
 <summary>Nous auron aussi besoin de ncmpcpp un player en ligne de commande</summary>
 
-<img width="916" height="748" alt="Capture d’écran du 2026-05-10 15-27-45" src="https://github.com/user-attachments/assets/3fe0ccef-7505-4e0d-82bf-6d30577f4303" />
+<img width="367" height="300" alt="Capture d’écran du 2026-05-10 15-27-45" src="https://github.com/user-attachments/assets/3fe0ccef-7505-4e0d-82bf-6d30577f4303" />
 
 ## installation
 
@@ -133,6 +133,78 @@ systemctl --user status mpdris2
 │           └── mpdris2.service (optionnel)
 ├── Musique/
 ```
+
 ## Résulta attendu 
 
 <img width="423" height="350" alt="Capture d’écran du 2026-05-10 15-37-27" src="https://github.com/user-attachments/assets/2a04f90f-eae8-47a3-a014-c4fdb43eb9ef" />
+
+<details>
+  
+<summary> Bonus </summary>
+
+## Access en local depuis votre smartphone (pour mon utilisation ça sera l'iphone)
+
+Pour que les chose soit plus simple installon firewall-config
+
+`sudo dnf install firewall-config`
+
+Une fois installer démarrer le, et la première chose a faire et de selectionner configuration permanante
+
+<img width="924" height="112" alt="Capture d’écran du 2026-05-11 10-56-38" src="https://github.com/user-attachments/assets/45f263bf-b9be-4071-9a87-a3a61098541e" />
+
+
+Ensuite choisissez juste mpd dans la liste services et faite options > recharger le firewall
+
+Pour trouver rapidement l'adresse IP locale utiliser cette commande : 
+
+`ip a | grep "inet " | grep -v 127.0.0.1`
+
+Cette commande retourne (exemple)
+
+```
+inet 192.168.1.45/24 brd 192.168.1.255 scope global dynamic wlp7s0
+inet 192.168.1.10/24 brd 192.168.1.255 scope global dynamic enp8s0
+```
+Dans cette liste choisissez en fonctione de votre connexion wifi ou ethernet 
+
+Dans mon cas j'ai choisis eternet `enp8s0` 
+
+Maintenant installer sur votre iphone [MPD pilot](https://mpdpilot.app) la version gratuite suffit amplement.
+
+Pour vous connecter depuis MPD pilot il faudra créer un profile local.
+
+|Non de la connexion (faluctatif)|
+|---------|
+|Fedora|
+
+|Nom d'hôte adresse ou adresse ip|
+|--------|
+|Utiliser une des IP wifi ou ethernet sans le `/24`|
+
+|Port|
+|----|
+
+|6600|
+
+|Dans le fichier `mpd.conf` modifié comme suite|
+|-------------------------|
+|bind_to_address		|	"any"|
+|port				      |  "6600"|
+
+
+Si tout fonctionne comme prévue vous pourrez utilisez votre smartphone comme télécommande 
+
+<img width="300" height="650" alt="mpdpilot-main" src="https://github.com/user-attachments/assets/e3705489-b462-4ab0-9bb1-d6cf06479100" />
+
+</details>
+
+
+
+
+
+
+
+
+
+
+
