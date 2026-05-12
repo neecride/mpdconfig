@@ -1,5 +1,7 @@
 Guide en construction
 
+# Fedora post install
+
 ## Nous auron besoin des Rpmfusion 
 
 *Configuration tester sous fedora avec le bureau gnome*
@@ -9,6 +11,11 @@ Avant l'installation vérifier si vous n'avez pas déjà les rpm installer
 `dnf repolist`
 
 Passer par ce lien pour les [Rpmfusion](https://rpmfusion.org/)
+
+
+<details>
+  
+<summary>Installation de music player daemon</summary>
 
 ## Après avoir intaller les Rpm passon a l'installation de mpd 
 
@@ -46,6 +53,9 @@ Pour utiliser `mpd` dans une conssole
 |`mpc repeat` | [on/off]	Activer/désactiver la répétition        |
 |`mpc random` | [on/off]	Activer/désactiver la lecture aléatoire |
 |`mpc clear` | Vider la file d'attente de lecture (playlist)      |
+
+---
+</details>
 
 ---
 
