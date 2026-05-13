@@ -1,0 +1,12 @@
+[Unit]
+Description=MPD to MPRIS2 bridge
+After=network.target mpd.service
+PartOf=graphical-session.target
+
+[Service]
+ExecStart=/usr/bin/mpDris2
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target
