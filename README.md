@@ -35,7 +35,7 @@ systemctl --user status mpd
 
 Créer un dossier `mpd` dans `.config` mettez y le fichier `mpd.conf` et ouvrir dans le terminal click droit dans le dossier et ouvrir avec un terminal, et ensuite entré cette commande 
 
-`mpd mpd.conf`
+`mpd ~/.config/mpd/mpd.conf`
 
 Si mpd était est déjà démarré faite un `killall mpd` puis relancer la commande si dessu.
 
