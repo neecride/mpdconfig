@@ -23,15 +23,24 @@ Passer par ce lien pour les [Rpmfusion](https://rpmfusion.org/)
 
 `sudo dnf install mpd`
 
-```
-# Démarrage normal
-mpd ~/.config/mpd/mpd.conf
+|Fichier |	Rôle |
+|------|---------|
+| `~/.config/mpd/mpd.conf`	|Configuration de MPD|
+| `~/.config/mpd/database`	|Base de données de votre bibliothèque|
+| `~/.config/mpd/state` |	État de la lecture (piste en cours, volume, etc.)|
 
-# Service utilisateur
-systemctl --user enable mpd
-systemctl --user start mpd
-systemctl --user status mpd
-```
+|Commande	|Que fait-elle ?|
+|-----------|-------------|
+| `systemctl --user start mpd`	|Démarre MPD maintenant|
+| `systemctl --user stop mpd`	|Arrête MPD immédiatement|
+| `systemctl --user restart mpd`	|Redémarre MPD (stop + start)|
+| `systemctl --user status mpd`	|Affiche l'état de MPD (actif/arrêté/erreur)|
+
+|Commande	| Que fait-elle ?|
+|------|------|
+| `systemctl --user enable mpd`	| Active le démarrage automatique au login|
+| `systemctl --user disable mpd`	| Désactive le démarrage automatique|
+| `systemctl --user is-enabled mpd`	| Vérifie si l'auto-démarrage est activé|
 
 Créer un dossier `mpd` dans `.config` mettez y le fichier `mpd.conf` et ouvrir dans le terminal click droit dans le dossier et ouvrir avec un terminal, et ensuite entré cette commande 
 
