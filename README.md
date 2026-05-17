@@ -231,6 +231,12 @@ Si tout fonctionne comme pr√©vue vous pourrez utilisez votre smartphone comme t√
 
 <img width="300" height="650" alt="mpdpilot-main" src="https://github.com/user-attachments/assets/e3705489-b462-4ab0-9bb1-d6cf06479100" />
 
+---
+
+### Pour la configuration de ma g502 j'utilise piper qui remplace dans une moindre mesure g-hub de logitech 
+
+`sudo dnf install piper`
+
 </details>
 
 
