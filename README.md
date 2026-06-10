@@ -196,8 +196,8 @@ Pour trouver rapidement l'adresse IP locale utiliser cette commande :
 Cette commande retourne (exemple)
 
 ```
-inet 192.168.1.45/24 brd 192.168.1.255 scope global dynamic wlp7s0
-inet 192.168.1.10/24 brd 192.168.1.255 scope global dynamic enp8s0
+inet 000.000.0.00/00 brd 000.000.0.000 scope global dynamic wlp7s0
+inet 000.000.0.00/00 brd 000.000.0.000 scope global dynamic enp8s0
 ```
 Dans cette liste choisissez en fonctione de votre connexion wifi ou ethernet 
 
